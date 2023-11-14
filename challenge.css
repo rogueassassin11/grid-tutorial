@@ -14,12 +14,20 @@
   /* grid-template-columns: 1fr 1fr 1fr 130px; */
   grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 130px [grid-end];
   grid-gap: 20px;
+
+  /* grid-template-areas:
+    "head head head ."
+    "box box box side"
+    "main main main side"
+    "foot foot foot foot"; */
 }
 
 .header {
   background-color: orangered;
   grid-row: 1 / 2;
   grid-column: col-start 1 / grid-end;
+
+  /* grid-area: head; */
 }
 
 .main {
